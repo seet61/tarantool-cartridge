@@ -9,6 +9,7 @@ dependencies = {
     'lua >= 5.1',
     'luatest == 0.2.0-1',
     'cartridge == 1.0.0-1',
+    'ldecnumber == 1.1.3-1',
 }
 build = {
     type = 'none';
