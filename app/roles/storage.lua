@@ -157,6 +157,9 @@ local function init(opts)
 	-- инициализация спейсов
 	init_spaces()
 	
+	box.schema.user.create('root', { password = 'secret', if_not_exists = true})
+	box.schema.user.grant('root', 'read,write,execute, drop', 'universe', nil, {if_not_exists=true})
+	
 	box.schema.func.create('customer_add', {if_not_exists = true})
 	box.schema.func.create('customer_lookup', {if_not_exists = true})
 	box.schema.func.create('customer_update_balance', {if_not_exists = true})

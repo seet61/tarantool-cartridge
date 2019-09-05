@@ -60,7 +60,7 @@ local function http_customer_get(req)
 	return resp
     end
     
-    if customer == nill then
+    if customer == nil then
 	local resp = req:render({
 	    json = {
 		info = "Customer not found",

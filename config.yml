@@ -1,24 +1,34 @@
 getting-started-app.router:
-  workdir: ./tmp/db/3301
+  workdir: /var/lib/tarantool/getting-started-app/router
   http_port: 8081
   advertise_uri: 3301
+  log: /var/log/tarantool/getting-started-app/router.log
+  log_level: 7
 
 getting-started-app.s1-master:
-  workdir: ./tmp/db/3302
+  workdir: /var/lib/tarantool/getting-started-app/s1-master
   http_port: 8082
   advertise_uri: 3302
+  log: /var/log/tarantool/getting-started-app/s1-master.log
+  log_level: 7
 
 getting-started-app.s1-replica:
-  workdir: ./tmp/db/3303
+  workdir: /var/lib/tarantool/getting-started-app/s1-replica
   http_port: 8083
   advertise_uri: 3303
+  log: /var/log/tarantool/getting-started-app/s1-replica.log
+  log_level: 7
 
 getting-started-app.s2-master:
-  workdir: ./tmp/db/3304
+  workdir: /var/lib/tarantool/getting-started-app/s2-master
   http_port: 8084
   advertise_uri: 3304
+  log: /var/log/tarantool/getting-started-app/s2-master.log
+  log_level: 7
 
 getting-started-app.s2-replica:
-  workdir: ./tmp/db/3305
+  workdir: /var/lib/tarantool/getting-started-app/s2-replica
   http_port: 8085
   advertise_uri: 3305
+  log: /var/log/tarantool/getting-started-app/s2-replica.log
+  log_level: 7
